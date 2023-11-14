@@ -1,0 +1,26 @@
+import java.util.*;
+class A{
+    public static void main(String args[]){
+        ArrayList <String> a=new ArrayList<String>();
+        System.out.println("ArrayList size before adding elements:"+a.size());
+        a.add("C");
+        a.add("D");
+        a.add("e");
+        a.add("f");
+        a.add("g");
+        a.add("h");
+        a.add(0,"A");
+        a.add(1,"b");
+        System.out.println(a);
+        System.out.println("After updating");
+        a.set(1,"B");
+        a.set(4,"E");
+        a.set(5,"F");
+        System.out.println(a);
+        System.out.println("After deleting");
+        a.remove("g");
+        a.remove("h");
+        System.out.println(a);
+          System.out.println("ArrayList size after manipulation:"+a.size());
+    }
+}
